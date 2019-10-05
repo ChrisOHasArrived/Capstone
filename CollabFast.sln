@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollabFast", "CollabFast\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollabFast.Tests", "CollabFast.Tests\CollabFast.Tests.csproj", "{3D5D156E-E529-49FA-8E5B-DF77C106E5DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollabFast.Data", "CollabFast.Data\CollabFast.Data.csproj", "{92BECEB0-5F70-4956-8542-AAC179706151}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3D5D156E-E529-49FA-8E5B-DF77C106E5DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D5D156E-E529-49FA-8E5B-DF77C106E5DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D5D156E-E529-49FA-8E5B-DF77C106E5DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92BECEB0-5F70-4956-8542-AAC179706151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92BECEB0-5F70-4956-8542-AAC179706151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92BECEB0-5F70-4956-8542-AAC179706151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92BECEB0-5F70-4956-8542-AAC179706151}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
