@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CollabFast.Models
 {
-    class Chat
+    public class Chat
     {
     }
 }

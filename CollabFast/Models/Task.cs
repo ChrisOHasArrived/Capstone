@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CollabFast.Models
 {
-    public class Task
+    public class ListTask
     {
         public string taskName { get; set; }
         public Priority priority { get; set; }
