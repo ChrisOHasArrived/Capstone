@@ -10,7 +10,7 @@ namespace CollabFast.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid id { get; set; }
 
-        public string taskName { get; set; }
-        public Priority priority { get; set; }
+        public string TaskName { get; set; }
+        public Priority Priority { get; set; }
     }
 }

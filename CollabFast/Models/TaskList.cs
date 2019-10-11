@@ -12,9 +12,9 @@ namespace CollabFast.Models
         public Guid id { get; set; }
 
         public int ID { get; set; }
-        public string taskListName { get; set; }
+        public string TaskListName { get; set; }
 
         [ForeignKey("ListTask")]
-        public virtual List<Guid> taskIDs { get; set; }
+        public virtual List<Guid> TaskIDs { get; set; }
     }
 }
