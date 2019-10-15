@@ -10,6 +10,6 @@ namespace CollabFast.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid id { get; set; }
+        public Guid Id { get; set; }
     }
 }
