@@ -1,0 +1,11 @@
+2. Individual contributions (each Team Member)
+   a. Role in the team and anticipated contributions
+    -- Scrum Master, Developer,  and Testing lead.
+    -- Currently working on ability to create a project
+   b. Progress/problems in achieving those contributions
+    -- small issue with access to the database. 
+    -- FIX: Use mock data since we should anyway for testing.
+    -- John fixed the DB by moving to Azure.
+
+
+--Check to make sure passwords are hashed.

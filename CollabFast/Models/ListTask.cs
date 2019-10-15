@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace CollabFast.Models
 {
-    public class Chat
+    public class ListTask
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
+        public Guid id { get; set; }
+
+        public string TaskName { get; set; }
+        public Priority Priority { get; set; }
     }
 }
