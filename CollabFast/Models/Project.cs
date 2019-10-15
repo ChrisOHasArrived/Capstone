@@ -9,27 +9,27 @@ namespace CollabFast.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid id { get; set; }
+        public Guid Id { get; set; }
 
         [Display(Name = "Project Name")]
-        public string projectName { get; set; }
+        public string ProjectName { get; set; }
 
 
         //The owner/admin of the project
         [Display(Name = "Owner")]
-        public ApplicationUser projectOwner { get; set; }
+        public ApplicationUser ProjectOwner { get; set; }
 
         // Other project members that are not the owner.
         [Display(Name = "Team Members")]
-        public ICollection<ApplicationUser> projectMembers { get; set; }
+        public ICollection<ApplicationUser> ProjectMembers { get; set; }
 
 
         // Features
         [ForeignKey("TaskList")]
-        public virtual Guid taskListID { get; set; }
+        public virtual Guid TaskListID { get; set; }
         [ForeignKey("Calendar")]
-        public virtual Guid calendarID { get; set; }
+        public virtual Guid CalendarID { get; set; }
         [ForeignKey("Chat")]
-        public virtual Guid chatID { get; set; }
+        public virtual Guid ChatID { get; set; }
     }
 }
