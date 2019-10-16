@@ -13,10 +13,10 @@ namespace CollabFast.Models
 
 
 
-            protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            {
-                optionsBuilder.UseSqlServer(@"Data Source = goldfinger.cluster-cntdcjk44nt1.us-east-2.rds.amazonaws.com,4848; Initial Catalog = goldfinger; User ID = admin; Password = bond007&)); Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; MultiSubnetFailover = False");
-            }
+        //    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+            //{
+          //      optionsBuilder.UseSqlServer(@"Data Source = goldfinger.cluster-cntdcjk44nt1.us-east-2.rds.amazonaws.com,4848; Initial Catalog = goldfinger; User ID = admin; Password = bond007&)); Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; MultiSubnetFailover = False");
+           // }
 
         }
     }
