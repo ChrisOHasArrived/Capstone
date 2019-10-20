@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Web;
 
 namespace CollabFast.Models
 {
     public enum Priority
     {
-        LOW, NORMAL, HIGH, SEVERE
+        URGENT, HIGH, NORMAL, LOW
     }
 }
