@@ -3,21 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CollabFast.Models;
 
 namespace CollabFast.Controllers
 {
     public class ProjectController : Controller
     {
+        private readonly ApplicationDbContext db;
+
+        public ProjectController()
+        {
+            db = new ApplicationDbContext();
+        }
         // GET: Project
+        [Authorize]
         public ActionResult Index()
         {
-            return View();
+            var projects = db.Projects.ToList();
+            return View(projects);
         }
 
         // GET: Project/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(Guid id)
         {
-            return View();
+            var project = db.Projects.FirstOrDefault(p => p.Id == id);
+            return View(project);
         }
 
         // GET: Project/Create
@@ -32,8 +42,12 @@ namespace CollabFast.Controllers
         {
             try
             {
-                // TODO: Add insert logic here
+                var p = new Project();
+                p.ProjectName = collection["ProjectName"];
+                p.ProjectOwner = User.Identity.Name;
 
+                db.Projects.Add(p);
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
             catch
@@ -43,9 +57,10 @@ namespace CollabFast.Controllers
         }
 
         // GET: Project/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Edit(Guid id)
         {
-            return View();
+            var project = db.Projects.FirstOrDefault(p => p.Id == id);
+            return View(project);
         }
 
         // POST: Project/Edit/5
@@ -54,8 +69,6 @@ namespace CollabFast.Controllers
         {
             try
             {
-                // TODO: Add update logic here
-
                 return RedirectToAction("Index");
             }
             catch
@@ -65,18 +78,21 @@ namespace CollabFast.Controllers
         }
 
         // GET: Project/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(Guid id)
         {
-            return View();
+            var project = db.Projects.FirstOrDefault(p => p.Id == id);
+            return View(project);
         }
 
         // POST: Project/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(Guid id, FormCollection collection)
         {
             try
             {
-                // TODO: Add delete logic here
+                var project = db.Projects.FirstOrDefault(p => p.Id == id);
+                db.Projects.Remove(project);
+                db.SaveChanges();
 
                 return RedirectToAction("Index");
             }
