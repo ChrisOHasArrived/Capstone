@@ -529,3 +529,5 @@ C:\Users\samue\Desktop\Capstone\Capstone\CollabFast\obj\Debug\CollabFast.csproj.
 C:\Users\samue\Desktop\Capstone\Capstone\CollabFast\obj\Debug\CollabFast.dll
 C:\Users\samue\Desktop\Capstone\Capstone\CollabFast\obj\Debug\CollabFast.pdb
 C:\Users\samue\Desktop\Capstone\Capstone\CollabFast\obj\Debug\CollabFast.csprojResolveAssemblyReference.cache
+C:\Users\chris\Desktop\Capstone\CollabFast\bin\System.Data.SqlClient.dll
+C:\Users\chris\Desktop\Capstone\CollabFast\bin\System.Data.SqlClient.xml
