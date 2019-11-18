@@ -171,6 +171,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FileUploadsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
@@ -178,18 +179,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910202218069_dropalltables.cs" />
-    <Compile Include="Migrations\201910202218069_dropalltables.Designer.cs">
-      <DependentUpon>201910202218069_dropalltables.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201910202225041_add-migration ToDoTaskAdd.cs" />
-    <Compile Include="Migrations\201910202225041_add-migration ToDoTaskAdd.Designer.cs">
-      <DependentUpon>201910202225041_add-migration ToDoTaskAdd.cs</DependentUpon>
+    <Compile Include="Migrations\201910212027587_init.cs" />
+    <Compile Include="Migrations\201910212027587_init.Designer.cs">
+      <DependentUpon>201910212027587_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\FileUpload.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Priority.cs" />
     <Compile Include="Models\Project.cs" />
@@ -325,6 +323,11 @@
     <Content Include="Views\ToDoTasks\Details.cshtml" />
     <Content Include="Views\ToDoTasks\Edit.cshtml" />
     <Content Include="Views\ToDoTasks\Index.cshtml" />
+    <Content Include="Views\FileUploads\Create.cshtml" />
+    <Content Include="Views\FileUploads\Delete.cshtml" />
+    <Content Include="Views\FileUploads\Details.cshtml" />
+    <Content Include="Views\FileUploads\Edit.cshtml" />
+    <Content Include="Views\FileUploads\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -343,11 +346,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201910202218069_dropalltables.resx">
-      <DependentUpon>201910202218069_dropalltables.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910202225041_add-migration ToDoTaskAdd.resx">
-      <DependentUpon>201910202225041_add-migration ToDoTaskAdd.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201910212027587_init.resx">
+      <DependentUpon>201910212027587_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

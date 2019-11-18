@@ -546,3 +546,9 @@ C:\Users\chris\Desktop\Capstone\CollabFast\obj\Debug\CollabFast.Migrations.TaskT
 C:\Users\chris\Desktop\Capstone\CollabFast\obj\Debug\CollabFast.Migrations.dropToDo.resources
 C:\Users\chris\Desktop\Capstone\CollabFast\obj\Debug\CollabFast.Migrations.dropalltables.resources
 C:\Users\chris\Desktop\Capstone\CollabFast\obj\Debug\CollabFast.Migrations.addmigrationToDoTaskAdd.resources
+C:\Users\chris\Desktop\CollabFast\Capstone\CollabFast\bin\System.Data.SqlClient.dll
+C:\Users\chris\Desktop\CollabFast\Capstone\CollabFast\bin\System.Data.SqlClient.xml
+C:\Users\chris\Desktop\CollabFast\Capstone\CollabFast\obj\Debug\CollabFast.Migrations.dropalltables.resources
+C:\Users\chris\Desktop\CollabFast\Capstone\CollabFast\obj\Debug\CollabFast.Migrations.addmigrationToDoTaskAdd.resources
+C:\Users\chris\Desktop\CollabFast\Capstone\CollabFast\obj\Debug\CollabFast.csproj.GenerateResource.cache
+C:\Users\chris\Desktop\CollabFast\Capstone\CollabFast\obj\Debug\CollabFast.Migrations.init.resources

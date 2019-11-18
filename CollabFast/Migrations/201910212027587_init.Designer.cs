@@ -7,13 +7,13 @@ namespace CollabFast.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class addmigrationToDoTaskAdd : IMigrationMetadata
+    public sealed partial class init : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addmigrationToDoTaskAdd));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(init));
         
         string IMigrationMetadata.Id
         {
-            get { return "201910202225041_add-migration ToDoTaskAdd"; }
+            get { return "201910212027587_init"; }
         }
         
         string IMigrationMetadata.Source
