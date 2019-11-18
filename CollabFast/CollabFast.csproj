@@ -325,6 +325,7 @@
     <Content Include="Views\ToDoTasks\Details.cshtml" />
     <Content Include="Views\ToDoTasks\Edit.cshtml" />
     <Content Include="Views\ToDoTasks\Index.cshtml" />
+    <Content Include="Views\Home\Dashboard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
