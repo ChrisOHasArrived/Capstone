@@ -1,5 +1,0 @@
-                builder = new SqlConnectionStringBuilder();
-                builder.DataSource = "goldfinger.database.windows.net";
-                builder.UserID = "james";
-                builder.Password = "bond007&))";
-                builder.InitialCatalog = "goldfinger";
