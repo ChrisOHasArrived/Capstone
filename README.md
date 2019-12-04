@@ -11,7 +11,4 @@
 1. Submission Overview
     1. This document
 1. Users Manual.pdf
-   1. User’s guide on how to use the application
-1. Administrators Manual.pdf
-    1. Administrator’s guide on how to use the application
-
+   1. User’s/Admin's guide on how to use the application
